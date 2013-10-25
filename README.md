@@ -15,6 +15,14 @@ Optional components:
 * gitconfig
 * extra packages
 
+## Requirements
+
+* `knife-solo` gem
+
+Installation:
+
+    gem install knife-solo
+
 ## Kickstart
 
 For the impatient, install with default settings:
