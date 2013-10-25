@@ -23,7 +23,7 @@
     "zsh": {
       "locked_version": "0.1.0",
       "git": "https://github.com/arlimus/chef-zsh.git",
-      "ref": "4887da261966d13d18c0ac4a6b7f27f0976fa2ae"
+      "ref": "162632e63f6837318125bfea768a9cee13f9f0ea"
     },
     "dmg": {
       "locked_version": "1.1.0"

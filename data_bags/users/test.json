@@ -6,7 +6,7 @@
   "home"          : "/home/test",
   "groups"        : ["admin"],
   // zsh configuration
-  "default_shell" : "/usr/bin/zsh",
+  "shell"         : "/usr/bin/zsh",
   "zsh_theme"     : "zero-dark",
   "zsh_plugins"   : "git extract zero web-search",
   // git configuration

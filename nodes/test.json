@@ -16,10 +16,14 @@
     }
   },
 
+  "users": [
+    "test"
+  ],
+
   "run_list": [
      "recipe[chef-solo-search]"
     ,"recipe[git]"
-    ,"recipe[user]"
+    ,"recipe[user::data_bag]"
     ,"recipe[virtualbox]"
     ,"recipe[vagrant]"
     ,"recipe[service-foundation]"
