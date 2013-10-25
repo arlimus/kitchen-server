@@ -21,7 +21,9 @@ Convention: replace `mynode` with either your node's IP address or hostname.
 
 1. Configure your kitchen. You can use `nodes/example.json` as a starting point:
 
-        # nodes/mynode.json
+        cp nodes/example.json nodes/mynode.json
+
+  now edit `nodes/mynode.json`:
 
         {
           "vagrant": {
@@ -46,7 +48,9 @@ Convention: replace `mynode` with either your node's IP address or hostname.
 
 2. Configure your users in `data_bags/users/`. You can use `example.json` to get started. Don't forget to add your ssh key:
 
-        # data_bags/users/ubuntu.json
+        cp data_bags/users/example.json data_bags/users/ubuntu.json
+
+  now edit `data_bags/users/ubuntu.json`:
 
         {
           // basic user config
