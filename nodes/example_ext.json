@@ -1,7 +1,5 @@
 {
-  "users": [
-    "katana"
-  ],
+  "users": [ "katana" ],
   "run_list": [
     "role[vagrant]",
     "role[shell-extras]"

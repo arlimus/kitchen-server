@@ -19,6 +19,13 @@ Optional components:
 
 For the impatient, install with default settings:
 
+    ./setup.sh ubuntu@192.168.200.204
+
+    # or for extra packages:
+    # ./setup.sh ubuntu@192.168.200.204 ext
+
+The Gist, if you prefer to do it yourself:
+
     host='192.168.200.204'
     sshkey=$(cat ~/.ssh/id_rsa.pub)
 
@@ -28,13 +35,6 @@ For the impatient, install with default settings:
 
     # and profit:
     ssh knife@$host
-
-You can alternatively use the extended config:
-
-    cp nodes/example_ext.json nodes/$host.json
-    sed 's~.*ssh_keys.*~"ssh_keys":["'${sshkey}'"]~' -i data_bags/users/example_ext.json
-    knife solo bootstrap ubuntu@$host
-    ssh katana@$host
 
 
 ## Usage and Configuration

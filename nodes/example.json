@@ -1,7 +1,5 @@
 {
-  "users": [
-    "knife"
-  ],
+  "users": [ "knife" ],
   "run_list": [
     "role[vagrant]"
   ]
