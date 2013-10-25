@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 [[ $# -ne 1 && $# -ne 2 ]] && \
   echo "usage: ./setup.sh <host> [<config_suffix>]" && \
