@@ -1,0 +1,50 @@
+{
+  "sha": "e3aaba26f26a0aa612d43d716876dce65890a604",
+  "sources": {
+    "chef-solo-search": {
+      "locked_version": "0.5.1",
+      "git": "https://github.com/edelight/chef-solo-search",
+      "ref": "681f78a108f5f8a3655551b32d9939603628c568"
+    },
+    "git": {
+      "locked_version": "2.5.2"
+    },
+    "user": {
+      "locked_version": "0.3.0"
+    },
+    "virtualbox": {
+      "locked_version": "1.0.0"
+    },
+    "vagrant": {
+      "locked_version": "0.2.0",
+      "git": "https://github.com/jtimberman/vagrant-cookbook.git",
+      "ref": "e64da7f98949ce2a63f18f9593a554c4b0718481"
+    },
+    "zsh": {
+      "locked_version": "0.1.0",
+      "git": "https://github.com/arlimus/chef-zsh.git",
+      "ref": "4887da261966d13d18c0ac4a6b7f27f0976fa2ae"
+    },
+    "dmg": {
+      "locked_version": "1.1.0"
+    },
+    "build-essential": {
+      "locked_version": "1.4.0"
+    },
+    "yum": {
+      "locked_version": "2.3.0"
+    },
+    "windows": {
+      "locked_version": "1.10.0"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    },
+    "runit": {
+      "locked_version": "1.1.6"
+    },
+    "apt": {
+      "locked_version": "2.0.0"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+# git config; arlimus, public domain
+
+## Make your adjustments
+########################
+
+[user]
+<%- if not @name.nil? -%>
+name = <%= @name %>
+<%- end -%>
+<%- if not @email.nil? -%>
+email = <%= @email %>
+<%- end -%>
+
+[core]
+# excludesfile = /home/xxx/.gitignore-global
+pager = less -FRX
+
+## in case your firewall is blocking git://, use https:// instead
+#[url "https://"]
+#    insteadOf = git://
+
+## in case you push to unverifyable https, disable verification
+#[http]
+#sslVerify=false
+
+
+## Global configuration
+#######################
+
+[alias]
+a  = add
+ap = add -p
+au = add --update
+
+b  = branch
+ba = branch -a
+
+bi = bisect
+cl = clone
+co = checkout
+
+d  = diff --color
+dc = diff --color --cached
+dd = difftool --dir-diff
+
+f  = fetch
+fa = fetch --all --prune
+
+c     = commit -s
+cc    = commit --amend
+cm    = commit -s -m
+ca    = commit -a -s
+cam   = commit -a -s -m
+cp    = commit -s -p
+
+# show commit graph
+l     = log --color --oneline --graph --decorate=short --all --simplify-by-decoration
+ll    = log --color --oneline --graph --decorate=short --all
+# show diffs and commit names
+ld    = log --color --decorate=short -p
+lad   = log --color --decorate=short -p --all
+# show just the diffs for commits
+lp    = log --color --oneline --decorate=short -p
+lap   = log --color --oneline --decorate=short -p --all
+# show commit graph with commit names and logs
+lt    = log --color --graph --decorate=short --all --simplify-by-decoration
+llt   = log --color --graph --decorate=short --all
+# show commit graph with files that were changed
+lf    = log --color --oneline --graph --decorate=short --name-only
+laf   = log --color --oneline --graph --decorate=short --name-only --all
+
+m  = merge --no-ff
+mf = merge --ff-only
+
+p  = push
+pa = push --all
+pt = push --tags
+
+pl = pull
+pla= pull --all
+
+rpa = remote prune --dry-run
+rp = remote prune
+
+r  = reset
+rsh= reset --soft HEAD
+rhh= reset --hard HEAD
+
+s  = status --short
+ss = status
+
+t  = tag
+
+[apply]
+whitespace = fix
+
+[pager]
+status = true
+
+[merge]
+tool = meld
+
+[mergetool "meld"]
+trustExitCode = true
+
+[push]
+default = matching
+
+[color]
+ui = auto

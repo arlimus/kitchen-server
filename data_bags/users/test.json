@@ -1,0 +1,17 @@
+{
+  // basic user config
+  "id"            : "test",
+  "comment"       : "Mr. Test",
+  "email"         : null,
+  "home"          : "/home/test",
+  "groups"        : ["admin"],
+  // zsh configuration
+  "default_shell" : "/usr/bin/zsh",
+  "zsh_theme"     : "zero-dark",
+  "zsh_plugins"   : "git extract zero web-search",
+  // git configuration
+  "gitconfig"     : true,
+  // ssh keys
+  "ssh_keys"      : [
+    ]
+}
