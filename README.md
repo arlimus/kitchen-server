@@ -2,18 +2,17 @@
 
 ... a server's kitchen. It configures a vanilla Ubuntu server to have:
 
+* set up users and user configuration + roll out ssh keys
 * virtualbox
-* vagrant
-* berkshelf
-* librarian-puppet
-* puppet
-* chef
+* vagrant with plugins: berkshelf
+* librarian-puppet (incl. puppet client)
+* core packages (curl, htop)
 
 Optional components:
 
-* zsh
-* gitconfig
-* extra packages
+* set up zsh with oh-my-zsh and themes per user
+* set up gitconfig (incl. git shortcuts) per user
+* extra packages (colordiff, 7z)
 
 ## Requirements
 
