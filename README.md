@@ -23,7 +23,7 @@ Convention: replace `mynode` with either your node's IP address or hostname.
 
         cp nodes/example.json nodes/mynode.json
 
-  now edit `nodes/mynode.json`:
+  Now edit `nodes/mynode.json`:
 
         {
           "vagrant": {
@@ -50,7 +50,7 @@ Convention: replace `mynode` with either your node's IP address or hostname.
 
         cp data_bags/users/example.json data_bags/users/ubuntu.json
 
-  now edit `data_bags/users/ubuntu.json`:
+  Now edit `data_bags/users/ubuntu.json`:
 
         {
           // basic user config
@@ -69,7 +69,11 @@ Convention: replace `mynode` with either your node's IP address or hostname.
 
         knife solo bootstrap ubuntu@mynode
 
-    You may refer to the [knife-solo documentation](http://matschaffer.github.io/knife-solo/) for help.
+  To update your server later on:
+
+        knife solo cook ubuntu@mynode
+
+  You may refer to the [knife-solo documentation](http://matschaffer.github.io/knife-solo/) for help.
 
 
 If you want the optional components, please refer to `nodes/example_ext.json` and `data_bags/users/example_ext.json`.
