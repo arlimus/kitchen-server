@@ -1,6 +1,8 @@
 # kitchen server
 
-... a server's kitchen. It configures a vanilla Ubuntu server to have:
+... a server's kitchen.
+
+It configures a vanilla server for your development needs.
 
 * set up users and user configuration + roll out ssh keys
 * virtualbox
@@ -21,6 +23,8 @@ Optional components:
 Installation:
 
     gem install knife-solo
+
+It is currently only tested with Ubuntu 12.04.
 
 ## Kickstart
 
