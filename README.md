@@ -29,8 +29,9 @@ For the impatient, install with default settings:
 
     ./setup.sh ubuntu@192.168.200.204
 
-    # or for the extended configuration:
-    # ./setup.sh ubuntu@192.168.200.204 ext
+Or use the extended configuration:
+
+    ./setup.sh ubuntu@192.168.200.204 ext
 
 The Gist, if you prefer to do it yourself:
 
