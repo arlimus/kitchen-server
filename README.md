@@ -2,7 +2,7 @@
 
 ... a server's kitchen.
 
-It configures a vanilla server for your development needs.
+It configures a vanilla server for your development needs. This is a collection of useful cookbooks with configuration.
 
 * set up users and user configuration + roll out ssh keys
 * virtualbox
