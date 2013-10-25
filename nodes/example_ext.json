@@ -1,6 +1,6 @@
 {
   "users": [
-    "example_ext"
+    "katana"
   ],
   "run_list": [
     "role[vagrant]",

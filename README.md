@@ -15,11 +15,34 @@ Optional components:
 * gitconfig
 * extra packages
 
+## Kickstart
+
+For the impatient, install with default settings:
+
+    host='192.168.200.204'
+    sshkey=$(cat ~/.ssh/id_rsa.pub)
+
+    cp nodes/example.json nodes/$host.json
+    sed 's~.*ssh_keys.*~"ssh_keys":["'${sshkey}'"]~' -i data_bags/users/example.json
+    knife solo bootstrap ubuntu@$host
+
+    # and profit:
+    ssh knife@$host
+
+You can alternatively use the extended config:
+
+    cp nodes/example_ext.json nodes/$host.json
+    sed 's~.*ssh_keys.*~"ssh_keys":["'${sshkey}'"]~' -i data_bags/users/example_ext.json
+    knife solo bootstrap ubuntu@$host
+    ssh katana@$host
+
+
 ## Usage and Configuration
 
 Convention: replace `mynode` with either your node's IP address or hostname.
 
-1. Configure your kitchen. You can use `nodes/example.json` as a starting point:
+1. **Configure your node**.
+  You can use `nodes/example.json` as a starting point:
 
         cp nodes/example.json nodes/mynode.json
 
@@ -34,8 +57,8 @@ Convention: replace `mynode` with either your node's IP address or hostname.
           ]
         }
 
-
-2. Configure your users in `data_bags/users/`. You can use `example.json` to get started:
+2. **Configure users** in `data_bags/users/`.
+  You can use `example.json` to get started:
 
         cp data_bags/users/example.json data_bags/users/ubuntu.json
 
@@ -52,11 +75,11 @@ Convention: replace `mynode` with either your node's IP address or hostname.
             ]
         }
 
-3. Get the kitchen online:
+3. **Install**
 
         knife solo bootstrap ubuntu@mynode
 
-  To update your server later on:
+  To update your server:
 
         knife solo cook ubuntu@mynode
 

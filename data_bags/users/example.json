@@ -1,10 +1,8 @@
 {
   // basic user config
-  "id"            : "example",
-  "comment"       : "Mr. Example",
-  "home"          : "/home/example",
+  "id"            : "knife",
+  "comment"       : "Mr. Example Knife",
   "groups"        : ["admin"],
   // ssh keys
-  "ssh_keys"      : [
-    ]
+  "ssh_keys"      : []
 }

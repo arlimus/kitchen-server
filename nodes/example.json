@@ -1,6 +1,6 @@
 {
   "users": [
-    "example"
+    "knife"
   ],
   "run_list": [
     "role[vagrant]"

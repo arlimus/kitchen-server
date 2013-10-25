@@ -1,9 +1,9 @@
 {
   // basic user config
-  "id"            : "example_ext",
-  "comment"       : "Mr. extended Example",
+  "id"            : "katana",
+  "comment"       : "Mr. extended Knife",
   "email"         : null,
-  "home"          : "/home/example_ext",
+  "home"          : "/home/katana",
   "groups"        : ["admin"],
   // zsh configuration
   "shell"         : "/usr/bin/zsh",
@@ -12,6 +12,5 @@
   // git configuration
   "gitconfig"     : true,
   // ssh keys
-  "ssh_keys"      : [
-    ]
+  "ssh_keys"      : []
 }
