@@ -5,6 +5,7 @@
 It configures a vanilla server for your development needs. This is a collection of useful cookbooks with configuration.
 
 * set up users and user configuration + roll out ssh keys
+* set up ruby 1.9 and gems
 * virtualbox
 * vagrant with plugins: berkshelf
 * librarian-puppet (incl. puppet client)
