@@ -4,5 +4,3 @@
   p7zip-full
   colordiff
 }.each{|p| package p}
-
-include_recipe "service-foundation::gitconfig"
