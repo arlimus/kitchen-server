@@ -31,7 +31,7 @@ SSHKEY_PATH="${HOME}/.ssh/id_rsa.pub"
 NEW_USER="$(cat "$USER_ORG" | grep '"id"' | grep -o '\"[^"]*\"' | tr -d '"' | tail -n1)"
 echo "-- the new user will be: ${NEW_USER}"
 
-sed "s;.*ssh_keys.*;ssh_keys\":[\"${SSHKEY}\"];" -i "$USER_ORG"
+sed "s;.*ssh_keys.*;\"ssh_keys\":[\"${SSHKEY}\"];" -i "$USER_ORG"
 echo "++ added ssh key to user ${NEW_USER}"
 
 cp "$NODE_ORG" "${NODE_CONF}"
