@@ -66,3 +66,6 @@ Convention: replace `mynode` with either your node's IP address or hostname.
         knife solo bootstrap ubuntu@mynode
 
     You may refer to the [knife-solo documentation](http://matschaffer.github.io/knife-solo/) for help.
+
+
+If you want the optional components, please refer to `nodes/example_ext.json` and `data_bags/users/example_ext.json`.

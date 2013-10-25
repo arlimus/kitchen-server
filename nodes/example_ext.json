@@ -27,7 +27,7 @@
     ,"recipe[virtualbox]"
     ,"recipe[vagrant]"
     ,"recipe[service-foundation]"
-    // very custom stuff:
+    // optional components:
     ,"recipe[zsh]"
     ,"recipe[service-foundation::extra]"
   ]
