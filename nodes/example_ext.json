@@ -17,7 +17,7 @@
   },
 
   "users": [
-    "test"
+    "example_ext"
   ],
 
   "run_list": [

@@ -1,0 +1,10 @@
+{
+  // basic user config
+  "id"            : "example",
+  "comment"       : "Mr. Example",
+  "home"          : "/home/example",
+  "groups"        : ["admin"],
+  // ssh keys
+  "ssh_keys"      : [
+    ]
+}

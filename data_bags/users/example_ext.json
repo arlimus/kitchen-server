@@ -1,9 +1,9 @@
 {
   // basic user config
-  "id"            : "exttest",
-  "comment"       : "Mr. extended Test",
+  "id"            : "example_ext",
+  "comment"       : "Mr. extended Example",
   "email"         : null,
-  "home"          : "/home/exttest",
+  "home"          : "/home/example_ext",
   "groups"        : ["admin"],
   // zsh configuration
   "shell"         : "/usr/bin/zsh",
