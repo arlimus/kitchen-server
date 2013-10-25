@@ -1,0 +1,17 @@
+{
+  // basic user config
+  "id"            : "exttest",
+  "comment"       : "Mr. extended Test",
+  "email"         : null,
+  "home"          : "/home/exttest",
+  "groups"        : ["admin"],
+  // zsh configuration
+  "shell"         : "/usr/bin/zsh",
+  "zsh_theme"     : "zero-dark",
+  "zsh_plugins"   : "git extract zero web-search",
+  // git configuration
+  "gitconfig"     : true,
+  // ssh keys
+  "ssh_keys"      : [
+    ]
+}
