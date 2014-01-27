@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 [[ $# -ne 1 && $# -ne 2 ]] && \
   echo "usage: ./setup.sh <host> [<config_suffix>]" && \
@@ -41,6 +41,9 @@ sed 's;.*users.*;"users":["'${NEW_USER}'"],;' -i "${NODE_CONF}"
 echo "++ added user ${NEW_USER} to node configuration"
 
 echo "-- starting knife solo"
+[ -z "$PORT" ]     && K_PORT="" || K_PORT="-p $PORT"
+[ -z "$PASSWORD" ] && K_PW=""   || K_PW="-P $PASSWORD"
+[ -z "$IDENTITY" ] && K_ID=""   || K_ID="-i $IDENTITY"
 knife solo bootstrap $SSHHOST
 
 echo ""

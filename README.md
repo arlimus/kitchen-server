@@ -101,6 +101,15 @@ Convention: replace `mynode` with either your node's IP address or hostname.
 
 If you want the optional components, please refer to `nodes/example_ext.json` and `data_bags/users/example_ext.json`.
 
+## Vagrant
+
+You can try it out via Vagrant:
+
+```bash
+vagrant up
+PORT=9922 PASSWORD=vagrant ./setup.sh vagrant@localhost
+```
+
 ## Contributing
 
 1. Fork the repository on Github
