@@ -21,6 +21,25 @@ execute "update-alternatives --set gem /usr/bin/gem1.9.1"
   vim
 }.each{|p| package p}
 
+
+template '/etc/vim/vimrc.local' do
+  source 'vimrc.erb'
+  mode 0644
+  owner 'root'
+  group 'root'
+  variables({
+    :tabwidth    => 2,
+    :colorscheme => 'monokai'
+  })
+end
+
+cookbook_file 'monokai.vim' do
+  path '/usr/share/vim/vimcurrent/colors/monokai.vim'
+  mode 0644
+  owner 'root'
+  group 'root'
+end
+
 if node['install_chef']
   %w{
     berkshelf

@@ -1,0 +1,9 @@
+set expandtab
+set tabstop=<%= @tabwidth %>
+set shiftwidth=<%= @tabwidth %>
+set autoindent 
+set smartindent
+<%- if @colorscheme -%>
+syntax enable
+colorscheme <%= @colorscheme %>
+<%- end -%>
