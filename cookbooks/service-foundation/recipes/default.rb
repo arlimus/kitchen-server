@@ -24,6 +24,7 @@ end
   curl
   build-essential
   vim
+  pcregrep
 }.each{|p| package p}
 
 
