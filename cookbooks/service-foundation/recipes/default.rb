@@ -7,15 +7,23 @@
 # All rights reserved - Do Not Redistribute
 #
 
-if node['plaform'] == 'ubunu' and
-  ['12.04','12.10','13.04','13.10'].include?(node['plaform_version'])
+case node['platform'].downcase
+when 'ubuntu'
+  if ['12.04','12.10','13.04','13.10'].include?(node['platform_version'])
 
-  # install ruby for ubuntu 12.04
-  package "ruby1.9.3"
-  package "ruby1.9.1-full"
-  execute "update-alternatives --set ruby /usr/bin/ruby1.9.1"
-  execute "update-alternatives --set gem /usr/bin/gem1.9.1"
+    # install ruby for ubuntu 12.04
+    package "ruby1.9.3"
+    package "ruby1.9.1-full"
+    execute "update-alternatives --set ruby /usr/bin/ruby1.9.1"
+    execute "update-alternatives --set gem /usr/bin/gem1.9.1"
 
+  else
+
+    package "ruby2.0"
+    package "ruby1.9.1-dev"
+    package "ruby2.0-dev"
+
+  end
 end
 
 # install extra core packages
