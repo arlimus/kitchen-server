@@ -33,11 +33,14 @@ template '/etc/vim/vimrc.local' do
   })
 end
 
-cookbook_file 'monokai.vim' do
-  path '/usr/share/vim/vimcurrent/colors/monokai.vim'
-  mode 0644
-  owner 'root'
-  group 'root'
+%w{vimcurrent vim74 vim73 vim72 vim71 vim70}.each do |vimfolder|
+  cookbook_file 'monokai.vim' do
+    path "/usr/share/vim/#{vimfolder}/colors/monokai.vim"
+    mode 0644
+    owner 'root'
+    group 'root'
+    only_if do File::directory? "/usr/share/vim/#{vimfolder}/colors" end
+  end
 end
 
 if node['install_chef']
