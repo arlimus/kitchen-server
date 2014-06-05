@@ -33,6 +33,7 @@ end
   build-essential
   vim
   pcregrep
+  jq
 }.each{|p| package p}
 
 
