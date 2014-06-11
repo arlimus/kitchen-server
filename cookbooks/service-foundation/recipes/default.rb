@@ -60,6 +60,13 @@ end
 end
 
 if node['install_chef']
+  # requirements for berkshelf (Ubuntu)
+  %w{
+    libxml2
+    libxslt-dev
+    libxml2-dev
+    }.each{|p| package p}
+
   %w{
     berkshelf
     chef
