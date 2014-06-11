@@ -10,3 +10,4 @@ cookbook 'ssh-hardening', git: 'https://github.com/TelekomLabs/chef-ssh-hardenin
 cookbook 'nginx'
 cookbook 'docker', git: 'https://github.com/bflad/chef-docker'
 cookbook 'zsh', git: 'https://github.com/arlimus/chef-zsh.git'
+cookbook 'openvpn'
