@@ -34,6 +34,7 @@ end
   vim
   pcregrep
   jq
+  apparmor-utils
 }.each{|p| package p}
 
 
