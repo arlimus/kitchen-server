@@ -3,6 +3,7 @@ source "https://api.berkshelf.com"
 cookbook 'chef-solo-search', git: 'https://github.com/edelight/chef-solo-search'
 cookbook 'git'
 cookbook 'user'
+cookbook 'sudo'
 cookbook 'virtualbox'
 cookbook 'vagrant', git: 'https://github.com/jtimberman/vagrant-cookbook.git'
 cookbook 'os-hardening', git: 'https://github.com/TelekomLabs/chef-os-hardening'
