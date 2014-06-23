@@ -1,6 +1,7 @@
 {
   // basic user config
   "id"            : "knife",
+  "action"        : "unlock",
   "comment"       : "Mr. Example Knife",
   "groups"        : ["admin"],
   // ssh keys
