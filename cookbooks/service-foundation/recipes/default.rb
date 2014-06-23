@@ -24,6 +24,8 @@ when 'ubuntu'
     package "ruby2.0-dev"
 
   end
+
+  package "libssl-dev"
 end
 
 # install extra core packages
