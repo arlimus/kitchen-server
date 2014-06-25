@@ -35,7 +35,6 @@ end
   build-essential
   vim
   pcregrep
-  jq
   apparmor-utils
 }.each{|p| package p}
 

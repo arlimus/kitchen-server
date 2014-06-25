@@ -4,4 +4,6 @@
   p7zip-full
   colordiff
   tree
+  jq
+  httpie
 }.each{|p| package p}
