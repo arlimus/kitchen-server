@@ -9,12 +9,12 @@ run_list %w{
 default_attributes({
   "oh-my-zsh" => {
     "themes" => [
-      "https://raw.github.com/arlimus/zero.zsh/master/themes/zero.zsh-theme.base",
-      "https://raw.github.com/arlimus/zero.zsh/master/themes/zero-dark.zsh-theme",
-      "https://raw.github.com/arlimus/zero.zsh/master/themes/zero-light.zsh-theme"
+      "https://raw.githubusercontent.com/arlimus/zero.zsh/master/themes/zero.zsh-theme.base",
+      "https://raw.githubusercontent.com/arlimus/zero.zsh/master/themes/zero-dark.zsh-theme",
+      "https://raw.githubusercontent.com/arlimus/zero.zsh/master/themes/zero-light.zsh-theme"
     ],
     "plugins" => {
-      "zero" => "https://raw.github.com/arlimus/zero.zsh/master/plugins/zero/zero.plugin.zsh"
+      "zero" => "https://raw.githubusercontent.com/arlimus/zero.zsh/master/plugins/zero/zero.plugin.zsh"
     }
   }
 })
