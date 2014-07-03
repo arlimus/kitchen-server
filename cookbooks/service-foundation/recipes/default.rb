@@ -69,10 +69,15 @@ if node['install_chef']
     }.each{|p| package p}
 
   %w{
+    dep-selector-libgecode
     berkshelf
     chef
     foodcritic
-  }.each{|g| gem_package g}
+  }.each do |name|
+    gem_package name do
+      options '--no-ri --no-rdoc'
+    end
+  end
 end
 
 if node['install_puppet']
