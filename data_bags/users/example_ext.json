@@ -1,7 +1,6 @@
 {
   // basic user config
   "id"            : "katana",
-  "action"        : "unlock",
   "comment"       : "Mr. extended Knife",
   "email"         : null,
   "home"          : "/home/katana",
