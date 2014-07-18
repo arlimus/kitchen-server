@@ -38,6 +38,12 @@ end
   apparmor-utils
 }.each{|p| package p}
 
+cookbook_file 'swap-show' do
+  path '/usr/bin/swap-show'
+  mode 0755
+  owner 'root'
+  group 'root'
+end
 
 template '/etc/vim/vimrc.local' do
   source 'vimrc.erb'
