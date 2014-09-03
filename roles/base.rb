@@ -3,6 +3,16 @@ description "Basic work server configuration"
 override_attributes({
   'network' => {
     'forwarding' => true
+  },
+  'authorization' => {
+    'sudo' => {
+      'groups' => %w{ admin sysadmin },
+      'passwordless' => true
+    }
+  },
+  'ssh' => {
+    'allow_tcp_forwarding' => true,
+    'allow_agent_forwarding' => true
   }
 })
 
