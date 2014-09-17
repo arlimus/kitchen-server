@@ -31,8 +31,11 @@ end
 # install extra core packages
 %w{
   htop
+  netcat
+  nethogs
   curl
   build-essential
+  autoconf
   vim
   pcregrep
   apparmor-utils
