@@ -11,7 +11,7 @@ users_with_unlock_without_password.each do |user|
   # Users which are to be unlocked but
   # don't have a password set, should still be
   # unlocked with an impossible password.
-  # 
+  #
   # This may be necessary to unlock an account for SSH
   # without reverting to setting a password.
   id = user['id']
