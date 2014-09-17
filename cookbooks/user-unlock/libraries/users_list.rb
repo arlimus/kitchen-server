@@ -47,7 +47,7 @@ class Chef
     end
 
     def users_with_unlock_without_password
-      active_users.find_all do |user|
+      active_users.compact.find_all do |user|
         actions = Array(user['action']).map(&:to_sym)
         (not user.key? 'password') and (not actions.include? :lock)
       end

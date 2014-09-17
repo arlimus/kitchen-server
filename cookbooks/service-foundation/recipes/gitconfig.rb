@@ -1,7 +1,7 @@
 # Add ~/.gitconfig
 
 # per-user config
-active_users.
+active_users.compact.
   find_all{|u| u['gitconfig'] == true }.
   each do |c|
 
