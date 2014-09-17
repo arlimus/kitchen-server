@@ -85,6 +85,7 @@ if node['install_chef']
   }.each do |name|
     gem_package name do
       options '--no-ri --no-rdoc'
+      timeout 1200
     end
   end
 end
