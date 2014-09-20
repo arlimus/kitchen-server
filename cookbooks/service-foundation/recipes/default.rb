@@ -31,6 +31,7 @@ end
 # install extra core packages
 %w{
   htop
+  sysstat
   netcat
   nethogs
   curl
